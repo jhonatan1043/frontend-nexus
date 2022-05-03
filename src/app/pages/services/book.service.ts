@@ -13,4 +13,8 @@ export class BookService {
   listBooks() {
     return this.http.get(`${env}book`);
   }
+
+  postBook(data: any) {
+    return this.http.post(`${env}book`, data);
+  }
 }
